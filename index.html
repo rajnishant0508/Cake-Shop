@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resturent</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style type="text/css">
+    
+   @font-face {
+    font-family: "BradleyHandITCBold";
+    src: url(./fonts/bradley_hand_itc_tt_bold.ttf); 
+    } 
+
+    @font-face {
+    font-family: "AppleChancery";
+    src: url(./fonts/apple.ttf); 
+    } 
+    
+     #map {
+        width: 100%;
+        height: 400px;
+      }
+
+  </style>
+   
+</head>
+<style type="text/css">
+	.top-bar{
+		width: 100%;
+		height: auto;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+  .zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+ }
+
+ @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+</style>
+<body>
+
+	
+
+<!-- Just an image -->
+<nav class="navbar navbar-light bg-light" style=" padding: 0;">
+  <img src="./image/top image (1).png" class="card-img" height="200" alt="...">
+</nav>
+
+ 
+
+<!-- Nav bar -->
+<nav class="navbar navbar-light">
+  <a class="navbar-brand" href="#">
+    <img src="./image/logo.png" width="50" height="50" alt="" loading="lazy">
+  </a>
+  <form class="form-inline">
+    <a href="#" style="margin: 10px; text-decoration: none; font-family: copperplate gothic; color: black;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'"><b>HOME</b></a>
+    <a href="about.html" style="margin: 10px; text-decoration: none; font-family: copperplate gothic; color: black;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'"><b>ABOUT</b></a>
+    <a href="#category" style="margin: 10px; text-decoration: none; font-family: copperplate gothic; color: black;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'"><b>CATEGORY</b></a>
+    <a href="#gallery" style="margin: 10px; text-decoration: none; font-family: copperplate gothic; color: black;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'"><b>GALLERY</b></a>
+    <a href="contact.html" style="margin: 10px; text-decoration: none; font-family: copperplate gothic; color: black;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'"><b>CONTACT</b></a>
+  </form>
+</nav>
+
+
+
+<div class="card  text-white">
+  <img src="./image/wallpaper.jpg" class="card-img" height="600" alt="...">
+  <div class="card-img-overlay">
+    <h5 style="font-family: copperplate gothic; font-size: 130px; text-align: center;">BAKE ON</h5>
+    <h2 style="font-family: AppleChancery; font-size: 50px; text-align: center; margin-top: 80px;">Welcome You!</h2>
+    <p style="text-align:center; font-family: copperplate gothic;"><button type="button" class="btn btn-outline-light" style=" border-color: #F4F6F7;">SIGN IN</button></p>
+
+   
+      <div class="row">
+        <div class="col">
+          <img src="./image/page1_img1.jpg" style="margin-left: 50px; margin-top: 30px;">
+
+           <p style="margin-top: 20px; font-size: 23px;  margin-left: 100px; color: black; font-family: 'BradleyHandITCBold'">Yua's ultimate goal is to satisfy one clients and their sweet tast buds.Our cakery provide superoir product, being both attractive and yummy! Our reqular client state we are the best, but we never stop developing our recipies. We continue exploring this fascinating sweet world.</p>
+
+        </div>
+        <div class="col">
+          <img src="./image/page1_img2.jpg" style="margin-left: 180px; margin-top: 360px;">
+        </div>
+      </div>
+    
+     
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row no-gutters" style="margin-top: 700px;">
+    
+    <div class="col-md-8">
+      <div class="">
+        <h5 style="font-family: copperplate gothic; font-size: 60px; margin-left: 80px;">How we</h5>
+            <div style="background-color: #e7edc7; background-size: cover; height:580px;">
+	        <h5 style="font-family: copperplate gothic; font-size: 50px; margin-left: 80px;">Started Baking</h5>
+                <div style="background-color: #f5f5df; margin-left:80px; margin-right:60px; ">
+		        <p class="card-text" style="margin-top: 30px; font-size: 25px;  font-family: 'BradleyHandITCBold'; margin-left: 20px;">our place is proude to be one of the best bangalore's finest cake,pastry bakeries.</p>
+		        
+		        <p style="margin-top: 30px; font-size: 25px; font-family:'BradleyHandITCBold';  margin-left: 20px;">our cake bakery adds only the freshest ingredients to make our backed goods taste a fresh-out-of-oven loke experience.An experience,that simply melt in your mouth.</p>
+		        
+		        <p style="margin-top: 30px; font-size: 25px; font-family: 'BradleyHandITCBold'; margin-left: 20px;">for instance,when we bake our cake famous whipped cream cake, we use only pure cream and the best brown sugar on the market. Also, we always buy the freshest fruit to make our cake pie fillings or our pastery menu items.</p>
+		        </div>
+	        
+
+            </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <img src="./image/baking.jpg" class="card-img" alt="...">
+    </div>
+
+  </div>
+</div>
+
+
+
+<div id="category">
+	<h5 style="font-family: copperplate gothic; font-size: 60px;text-align:center; margin: 30px;">Our category</h5>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col zoom"> <a href="category.html" style="text-decoration: none;"><img src="./image/category-1.jpg" class="rounded" alt="..."><p style="font-size: 30px; font-family: applechancery; text-align: center; color: black;">Cupcakes</p></a></div>
+    <div class="col zoom"> <a href="category.html" style="text-decoration: none;"><img src="./image/category-2.jpg" class="rounded" alt="..."><p style="font-size: 30px; font-family: applechancery; text-align: center; color: black;">Brownies</p></a></div>
+    <div class="col zoom"> <a href="category.html" style="text-decoration: none;"><img src="./image/category-3.jpg" class="rounded" alt="..."><p style="font-size: 30px; font-family: applechancery; text-align: center; color: black;">Cheesecakes</p></a></div>
+    <div class="col zoom"> <a href="category.html" style="text-decoration: none;"><img src="./image/category-4.jpg" class="rounded" alt="..."><p style="font-size: 30px; font-family:AppleChancery; text-align: center; color: black;">Cakes</p></a></div>
+  </div>
+</div>
+<br><br><br><br>
+
+
+
+
+<div class="card  text-white">
+  <img src="./image/page1_img1.jpg" class="card-img" height="800" alt="...">
+  <div class="card-img-overlay">
+    <p style="font-size: 35px; font-family: applechancery; text-align: center; color: white; margin-top: 300px;">Yua is a family owned<br> backery, with treasure the<br> atmosphere.</p>
+  </div>
+</div>
+
+	   
+
+
+
+
+
+<div id="gallery">
+	<h5 style="font-family: copperplate gothic; font-size: 60px;text-align:center; margin: 30px;">Our Gallery</h5>
+</div>
+
+
+
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="background-color: #E6ECEF; padding: 80px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">	
+        <div class="row">
+    	    <div class="col zoom"><a href="gallery.html"><img src="./image/project6.jpg" class="rounded" alt="..."></a></div>
+    	    <div class="col zoom"><a href="gallery.html"><img src="./image/project5.jpg" class="rounded" alt="..."></a></div>
+    	    <div class="col zoom"><a href="gallery.html"><img src="./image/project4.jpg" class="rounded" alt="..."></a></div>
+	      </div><br><br>
+	      <div class="row">
+    	    <div class="col zoom"><a href="gallery.html"><img src="./image/project1.jpg" class="rounded" alt="..."></a></div>
+    	    <div class="col zoom"><a href="gallery.html"><img src="./image/MixOfProducts-300.jpg" class="rounded" alt="..."></a></div>
+    	    <div class="col zoom"><a href="gallery.html"><img src="./image/project3.jpg" class="rounded" alt="..."></a></div>
+	      </div>
+	   </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container"> 
+       <div class="row">
+          <div class="col zoom"><a href="gallery.html"><img src="./image/project6.jpg" class="rounded" alt="..."></a></div>
+          <div class="col zoom"><a href="gallery.html"><img src="./image/project5.jpg" class="rounded" alt="..."></a></div>
+          <div class="col zoom"><a href="gallery.html"><img src="./image/project4.jpg" class="rounded" alt="..."></a></div>
+        </div><br><br>
+        <div class="row">
+          <div class="col zoom"><a href="gallery.html"><img src="./image/project1.jpg" class="rounded" alt="..."></a></div>
+          <div class="col zoom"><a href="gallery.html"><img src="./image/MixOfProducts-300.jpg" class="rounded" alt="..."></a></div>
+          <div class="col zoom"><a href="gallery.html"><img src="./image/project3.jpg" class="rounded" alt="..."></a></div>
+        </div>
+     </div>
+    </div>
+    <div class="carousel-item">
+       <div class="container">  
+        <div class="row">
+          <div class="col zoom"><a href="gallery.html"><img src="./image/project6.jpg" class="rounded" alt="..."></a></div>
+          <div class="col zoom"><a href="gallery.html"><img src="./image/project5.jpg" class="rounded" alt="..."></a></div>
+          <div class="col zoom"><a href="gallery.html"><img src="./image/project4.jpg" class="rounded" alt="..."></a></div>
+        </div><br><br>
+        <div class="row">
+          <div class="col zoom"><a href="gallery.html"><img src="./image/project1.jpg" class="rounded" alt="..."></a></div>
+          <div class="col zoom"><a href="gallery.html"><img src="./image/MixOfProducts-300.jpg" class="rounded" alt="..."></a></div>
+          <div class="col zoom"><a href="gallery.html"><img src="./image/project3.jpg" class="rounded" alt="..."></a></div>
+        </div>
+     </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<br><br><br><br>
+
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card mb-3" style="border-color: white">
+        <div class="row no-gutters">
+          
+          <div class="col-md-8">
+            <div class="">
+              <h5 style="font-family: copperplate gothic; font-size: 60px; margin-left: 20px;">Most Popular</h5>
+                    <div style="background-color: #B5F0ED; background-size: cover; height:580px;">
+                       <h5 style="font-family: copperplate gothic; font-size: 50px; margin-left: 20px;">Cake we have</h5>   <img src="./image/Cake-chocolate-dessert-candy-mint-leaves_2560x1600.jpg" style="margin-left: 50px; margin-top: 30px;">                   
+
+                  </div>
+            </div>
+                
+          </div>
+
+          <div class="col-md-4">
+            <img src="./image/sweet-potato-cake-3.jpg" class="card-img" alt="...">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+        <div class="card mb-3" style="border-color: white">
+          <div class="row no-gutters">
+            
+            <div class="col-md-8">
+              <div class="">
+                <h5 style="font-family: copperplate gothic; font-size: 60px; margin-left: 20px;">Most Popular</h5>
+                    <div style="background-color: #B5F0ED; background-size: cover; height:580px;">
+                       <h5 style="font-family: copperplate gothic; font-size: 50px; margin-left: 20px;">Cake we have</h5>
+                        
+                        <img src="./image/Cake-chocolate-dessert-candy-mint-leaves_2560x1600.jpg" style="margin-left: 50px; margin-top: 30px;">
+
+                    </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <img src="./image/sweet-potato-cake-3.jpg" class="card-img" alt="...">
+            </div>
+
+          </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card mb-3" style="border-color: white">
+        <div class="row no-gutters">
+          
+          <div class="col-md-8">
+            <div class="">
+              <h5 style="font-family: copperplate gothic; font-size: 60px; margin-left: 20px;">Most Popular</h5>
+                    <div style="background-color: #B5F0ED; background-size: cover; height:580px;">
+                       <h5 style="font-family: copperplate gothic; font-size: 50px; margin-left: 20px;">Cake we have</h5>
+                        
+                        <img src="./image/Cake-chocolate-dessert-candy-mint-leaves_2560x1600.jpg" style="margin-left: 50px; margin-top: 30px;">
+
+                  </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <img src="./image/sweet-potato-cake-3.jpg" class="card-img" alt="...">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  
+
+   <!--====== MAP PART START ======-->
+
+    <div id="map" class="container-fluid"></div>
+                <script>
+    
+                    // This example displays a marker at the center of Australia.
+                    // When the user clicks the marker, an info window opens.
+                
+                var markers = [];
+                
+                    function initMap() {
+                    var baseLatLong = {lat: 20.2860587, lng: 85.8345398};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 15,
+                      center: baseLatLong
+                    });
+                
+                    
+                
+                    google.maps.event.addListener(map, 'click', function(event) {
+                     placeMarker(map,event.latLng);
+                     //console.log(event);
+                    });
+                
+                
+                    // START :: Current Location
+                
+                    var infoWindow1 = new google.maps.InfoWindow({map: map});
+                    // Try HTML5 geolocation.
+                    if (navigator.geolocation) {
+                      navigator.geolocation.getCurrentPosition(function(position) {
+                      var pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                      };
+                
+                
+                
+                        var currentPosition  = new google.maps.LatLng(pos.lat, pos.lng);
+                        var otherPoint = new google.maps.LatLng(baseLatLong.lat, baseLatLong.lng);
+                
+                       // alert(calcDistance(currentPosition , otherPoint));
+                
+                
+                      console.log(pos);
+                
+                      infoWindow1.setPosition(pos);
+                      infoWindow1.setContent('Current Location : Latitude:'+pos.lat + " Longitude:"+ pos.lng);
+                      map.setCenter(pos);
+                      }, function() {
+                      handleLocationError(true, infoWindow1, map.getCenter());
+                      });
+                    } else {
+                      // Browser doesn't support Geolocation
+                      handleLocationError(false, infoWindow1, map.getCenter());
+                    }
+                
+                    //END :: Current Location
+                
+                    }
+                
+                
+                    function placeMarker(map, location) {
+                
+                    removeMarkers();
+                    
+                      var marker = new google.maps.Marker({
+                        position: location, 
+                        map: map
+                      });
+                      //console.log(location);
+                    
+                    document.getElementById("lat").value=location.lat();
+                    document.getElementById("lng").value=location.lng();
+                
+                      var contentData = '<div id="content">'+
+                      '<div id="siteNotice">'+
+                      '</div>'+
+                      '<h1 id="firstHeading" class="firstHeading">Location</h1>'+
+                      '<div id="bodyContent">'+
+                      '<p><b>Latitude: '+location.lat()+'</b></p>' +  
+                      '<p><b>Longitude: '+location.lng()+'</b></p>' + 
+                      '</div>'+
+                      '</div>';
+                    var infowindow2 = new google.maps.InfoWindow({
+                      content: contentData
+                    });
+                
+                    marker.addListener('click', function() {
+                      infowindow2.open(map, marker);
+                    });
+                
+                
+                    //Add marker to the array.
+                     markers.push(marker);
+                
+                    }
+                
+                
+                    function removeMarkers() {
+                    //Loop through all the markers and remove
+                    for (var i = 0; i < markers.length; i++) {
+                      markers[i].setMap(null);
+                    }
+                    markers = [];
+                  };
+                
+                    //Function for Current Location
+                    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent(browserHasGeolocation ?
+                                'Error: The Geolocation service failed.' :
+                                'Error: Your browser doesn\'t support geolocation.');
+                    }
+                
+                
+                    //calculates distance between two points in km's
+                    function calcDistance(p1, p2){
+                    return (google.maps.geometry.spherical.computeDistanceBetween(p1, p2) / 1000).toFixed(2);
+                    }
+                
+                
+                /*
+                    var rad = function(x) {
+                    return x * Math.PI / 180;
+                    };
+                
+                    var getDistance = function(p1, p2) {
+                    var R = 6378137; // Earth’s mean radius in meter
+                    var dLat = rad(p2.lat() - p1.lat());
+                    var dLong = rad(p2.lng() - p1.lng());
+                    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                      Math.cos(rad(p1.lat())) * Math.cos(rad(p2.lat())) *
+                      Math.sin(dLong / 2) * Math.sin(dLong / 2);
+                    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                    var d = R * c;
+                    return d; // returns the distance in meter
+                    };*/
+                
+                  </script>
+                  <script async defer
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBRwuvgr8Thn-kajeeHeMwr6speR549AI&libraries=geometry&callback=initMap">
+                  </script>
+    
+   
+    <!--====== MAP PART ENDS ======-->
+
+
+
+
+<footer id="contact">
+  
+  <div class="bg-gray-800" style="background-color:#CCCCCC;">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+     <p class="text-gray-600 text-sm text-center sm:text-left" style="color: black;"><b style="font-size: 25px; font-family: BradleyHandITCBold; "><strong>yuacake@gmail.com</strong></b>
+        
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-600">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+
+
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
